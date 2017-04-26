@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ScrollView1">
+        <TableLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tableLayout11">
+            <TableRow
+                android:gravity="center"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="OD Basic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ODBasic" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_ODBasic"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="Add.Ton."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_AddTon" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_AddTon"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:text="Discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Discount" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_Discount"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="N C B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_NCB" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_NCB"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="IMT23(Paint Chrgs)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_IMT23PaintChrgs" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_IMT23PaintChrgs"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="OD Total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ODTotal" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_ODTotal"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="TP Basic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_TPBasic" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_TPBasic"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="PA Owner Dr."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_PAToOwnerDriver" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_PAToOwnerDriver"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="LL. to Dr and Cl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_LLtoDrAndCl" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_LLtoDrAndCl"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="LL to Passengers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_LLToPassengers" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_LLToPassengers"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="PA to Non Fare Pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_PAToNonFarePass" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_PAToNonFarePass"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="PA to Dr. and Cleaner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_PAToDrAndCleaner" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_PAToDrAndCleaner"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="PA to Unnamed Passengers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_PAToUnnamedPassengers" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_PAToUnnamedPassengers"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="TP Total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_TPTotal" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_TPTotal"
+                    android:enabled="false" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="Total Prem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_TotalPrem" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/et_TotalPrem" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="Service Tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ServiceTax" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/et_ServiceTax" />
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:text="Totol Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_TotolAmount" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/et_TotolAmount" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

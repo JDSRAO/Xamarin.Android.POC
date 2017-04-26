@@ -10,16 +10,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace Reminder.Code
+namespace AppCompactApp.Model
 {
-     public static class ReminderOperations
+    public class TreeCatalog
     {
-        public static bool Save()
-        {
-
-
-
-            return true;
-        }
+        public int NumTrees { get; set; }
     }
 }

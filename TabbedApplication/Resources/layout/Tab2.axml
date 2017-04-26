@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ScrollLayout1">
+        <TableLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tableLayout1">
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:gravity="center"
+                android:layout_width="match_parent">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/vachicle_arrays"
+                    android:prompt="@string/vachicle_prompt"
+                    android:id="@+id/ddl_TypeOfVechicle"
+                    android:contentDescription="@string/vachicle_prompt"
+                    android:scrollbars="vertical"
+                    android:fitsSystemWindows="true" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:gravity="center"
+                android:layout_width="match_parent">
+                <Spinner
+                    android:entries="@array/age_array"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ddl_AgeOfVechicle" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:gravity="center"
+                android:layout_width="match_parent">
+                <Spinner
+                    android:entries="@array/CC_arrays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ddl_CC" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:gravity="center"
+                android:layout_width="match_parent">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/NCB_arrays"
+                    android:prompt="@string/vachicle_prompt"
+                    android:id="@+id/ddl_NCB" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:gravity="center"
+                android:layout_width="match_parent">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/GVW_array"
+                    android:id="@+id/ddl_GVW" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:text="IDV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_IDV" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_IDV" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="Discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_Discount" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_Discount" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="No of Passengers for Buses/Texis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_NoOfPassBusOrTaxi" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_NoOfPassBusOrTaxi" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="PA to owner driver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_PAToOwnerDriver" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/YesORNo"
+                            android:id="@+id/ddl_PAToOwnerDriver" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="PA to driver and cleaner (number)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_PAToDriverCleaner" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_PAToDriverCleaner" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="PA Sum Insured for Driver and Cleaner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_PASumInsuredforDriverandCleaner" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_PASumInsuredforDriverandCleaner" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="Lg. Lab. to Number of Drivers and Cleaners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_LgLabtoNumberofDriversandCleaners" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_LgLabtoNumberofDriversandCleaners" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="Pa to Unnamed Passengers for Private Car"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_PAtoUnnamedPassengersforPrivateCar" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_PAtoUnnamedPassengersforPrivateCar" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="PA Sum Insured for Unnamed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_PASumInsuredforUnnamed" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_PASumInsuredforUnnamed" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:gravity="center"
+                        android:layout_width="match_parent">
+                        <TextView
+                            android:text="Inclusion of IMT 23(for Comm. Veh.)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_InclusionOfIMT23" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/YesORNo"
+                            android:id="@+id/ddl_InclusionOfIMT23" />
+                    </TableRow>
+                    <TableLayout>
+                        <TableRow
+                            android:gravity="center">
+                            <Button
+                                android:id="@+id/btn_Calculate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Calculate" />
+                            <Button
+                                android:id="@+id/btn_DetailsBreakUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Details Break Up" />
+                        </TableRow>
+                        <TableRow
+                            android:gravity="center">
+                            <TextView
+                                android:text="Total Amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_TotalAmount" />
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_TotolAmount"
+                                android:enabled="false" />
+                        </TableRow>
+                    </TableLayout>
+                </TableLayout>
+                <TableRow />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>
