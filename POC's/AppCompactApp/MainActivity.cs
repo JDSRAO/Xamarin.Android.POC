@@ -14,13 +14,36 @@
     using AppCompactApp.Services;
     using AppCompactApp.Services.Conections;
     using Java.Util;
+    using System.IO;
+    using Android.Content.Res;
     using System;
+    using repository;
+
 
     [Activity(Label = "AppCompactApp", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
         DrawerLayout drawerLayout;
         NavigationView navigationView;
+
+        public static string Path //generate platform specific path for db file
+        {
+            get
+            {
+                var dbPath = string.Empty;
+                dbPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+                return System.IO.Path.Combine(dbPath, Name);
+            }
+        }
+
+        public static string Name
+        {
+            get
+            {
+                return "MotorPremiumCalculator.db3";
+            }
+        }
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -54,7 +77,16 @@
             button.Click += Button_Click;
 
         }
-        
+
+        protected override void OnStart()
+        {
+            base.OnStart();
+            MoveDbToPhone();
+
+            TestClass1 rep = new TestClass1(Path);
+            rep.GetZones();
+        }
+
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
@@ -88,7 +120,39 @@
             MenuInflater.Inflate(Resource.Menu.top_menus, menu);
             return base.OnCreateOptionsMenu(menu);
         }
-        
+
+        private void MoveDbToPhone()
+        {
+            var dbPath = string.Empty;
+            dbPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string path = System.IO.Path.Combine(dbPath, "MotorPremiumCalculator.db3");
+            // Check if your DB has already been extracted.
+            if (!File.Exists(path))
+            {
+                try
+                {
+                    AssetManager assets = this.Assets;
+                    using (BinaryReader br = new BinaryReader(assets.Open("Database/" + "MotorPremiumCalculator.db3")))
+                    {
+                        using (BinaryWriter bw = new BinaryWriter(new FileStream(path, FileMode.Create)))
+                        {
+                            byte[] buffer = new byte[2048];
+                            int len = 0;
+                            while ((len = br.Read(buffer, 0, buffer.Length)) > 0)
+                            {
+                                bw.Write(buffer, 0, len);
+                            }
+                        }
+                    }
+                }
+
+                catch (System.Exception)
+                {
+                    throw;
+                }
+            }
+        }
+
     }
 }
 
